@@ -68,3 +68,40 @@ const bottle1 = {
     console.log ('We did it!', i);
   }
   
+
+
+  //Functions
+//Defining a function
+function login(username, password) {
+  //validate username and password
+  if(!username || !password) {
+    return 'Username or password not provided';
+  }
+  
+  //verify username and password
+  if(username == 'Jack_Toronto' && password == '1234'){
+    return 'user is logged in';
+  } else {
+    return 'Invalid username or passwprd';
+  }
+}
+//Invoking a function
+login('Jack_Toronto')
+
+
+
+//Basic Arithmetic Operations
+
+11 + 12;
+1 + 0.5;
+43 - 12;
+45 / 5;
+5 * 3;
+14 % 3;
+
+math.floor(45/24);
+45%24
+math.random() * 1000;
+math.max (34, 32, 37);
+2 * (3 + 4) - 5 / 2;
+
