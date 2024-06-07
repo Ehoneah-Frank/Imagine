@@ -105,3 +105,41 @@ math.random() * 1000;
 math.max (34, 32, 37);
 2 * (3 + 4) - 5 / 2;
 
+
+
+
+// strings in Javscript
+// concatenation
+
+const firstname = 'Jack';
+const lastname = 'Toronto';
+const middlename = '';
+firstname  + ' ' + lastname;
+
+//Template Literal
+`${firstname} ${middlename} ${lastname}`;
+
+
+//String Methods
+
+let fullName = "Jack Toronto";
+fullName.length;
+
+
+let last_name = "Toronto Mate";
+last_name.toUpperCase();
+last_name.toLowerCase();
+last_name.charAt(4);
+last_name.slice(4,8);
+last_name.split("");
+last_name.replace("Mate", "Jack");
+last_name.indexOf('on');
+
+// String Conversion
+
+parseInt("3.243")
+parseFloat("3.243")
+
+let amount = 18000
+console.log(`GHS${amount}`)
+amount.toString()
