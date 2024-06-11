@@ -184,3 +184,83 @@ const users = [
     email: 'jacktoronto@gmail.com'
   },
 ];
+
+
+
+
+
+// Write a function that will take a user with firstname, lastname and return fullname;
+
+// function addDetails( firstname, lastname){
+//   if (firstname & lastname !== null) {
+//     return "Type in your First Name and Last Name";
+// } else {
+//   return firstname + " " + lastname;
+// }
+// }
+//  addDetails(); 
+
+
+
+function fullName(user) {
+  return {
+    ...user,
+    fullName: `${user.firstname} ${user.lastname}`
+  };
+  // return user.firstname + ' ' + user.lastname;
+}
+
+const user = {
+  firstname: 'Jack',
+  lastname: 'Toronto'
+}
+fullName(user);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Array map
+
+const users = [
+  {firstname: 'Jack', lastname: 'Toronto'},
+  {firstname: 'Big', lastname:'Jerry'},
+  {firstname: 'Cristopher' , lastname: 'Katonga'},
+  {firstname: 'Jack', lastname: 'Toronto'},
+  {firstname: 'Jack', lastname: 'Toronto'},
+  
+]
+// users.map(fullName);
+
+
+// square of numbers
+function square(number) {
+  return number ** 2;
+}
+square(5);
+
+const numbers = [9, 8, 7, 6];
+numbers.map(square);
+
+
+// Array filter
+
+function isEven(number){
+  return number % 2 == 0;
+}
+isEven(6);
+numbers.filter(isEven);
+
