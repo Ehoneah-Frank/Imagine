@@ -172,34 +172,24 @@ participants;
 
 
 // Arrays in JavaScript
-const users = [
-  {
-    username: 'jacktoronto',
-    password: '1234',
-    email: 'jacktoronto@gmail.com'
-  },
-    {
-    username: 'jack',
-    password: '1234',
-    email: 'jacktoronto@gmail.com'
-  },
-];
+// const users = [
+//   {
+//     username: 'jacktoronto',
+//     password: '1234',
+//     email: 'jacktoronto@gmail.com'
+//   },
+//     {
+//     username: 'jack',
+//     password: '1234',
+//     email: 'jacktoronto@gmail.com'
+//   },
+// ];
 
 
 
 
 
 // Write a function that will take a user with firstname, lastname and return fullname;
-
-// function addDetails( firstname, lastname){
-//   if (firstname & lastname !== null) {
-//     return "Type in your First Name and Last Name";
-// } else {
-//   return firstname + " " + lastname;
-// }
-// }
-//  addDetails(); 
-
 
 
 function fullName(user) {
@@ -264,3 +254,33 @@ function isEven(number){
 isEven(6);
 numbers.filter(isEven);
 
+
+
+
+// write a finction that will allow a user to reset their password
+
+// const user = {
+//   email: 'jacktoronto@gmail.com',
+//   password: '1234'
+// }
+function resetPassword(email, newPassword){
+  // Check if email and new password was provided
+  if (!email || !newPassword) {
+    return 'Email or password not provided';
+  }
+  // Check if provided email is correct
+  if (email !== user.email) {
+    return 'Incorrect email';
+  }
+  // update password with new one
+  user.password = newPasswrod;
+  return 'Password reset successful';
+  if (email !==user.email){
+  return 'Invalid email';
+}
+}
+
+
+user;
+resetPassword('jacktoronto@gmail.com');
+user;
